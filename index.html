@@ -1,0 +1,687 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="YuenCo" property="og:title">
+    
+    
+    <link href="https://prophone.herokuapp.com/staticfiles/landing_page_gen/style.css" rel="stylesheet">
+    
+    <link href="https://prophone.herokuapp.com/staticfiles/landing_page_gen/render.css" rel="stylesheet">
+    
+    <script src="https://prophone.herokuapp.com/staticfiles/landing_page_gen/render.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    
+    <meta content="https://landing-page-app-hero-images.s3.amazonaws.com/media/HGNY4J81NHQ9XA937QQ8KAS9Q61I79FC6S75WV10.jpeg" property="og:image">
+    <meta content="YuenCo" property="twitter:title">
+    <meta content="https://landing-page-app-hero-images.s3.amazonaws.com/media/HGNY4J81NHQ9XA937QQ8KAS9Q61I79FC6S75WV10.jpeg" property="twitter:image">
+    <link href="https://landing-page-app-hero-images.s3.amazonaws.com/media/HGNY4J81NHQ9XA937QQ8KAS9Q61I79FC6S75WV10.jpeg" rel="shortcut icon" type="image/x-icon">
+    <link href="https://landing-page-app-hero-images.s3.amazonaws.com/media/HGNY4J81NHQ9XA937QQ8KAS9Q61I79FC6S75WV10.jpeg" rel="apple-touch-icon">
+    
+    
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+    <title>YuenCo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.0.2/tailwind.min.css">
+</head>
+<body>
+
+
+<div class="sticky w-full lg:h-25 lg:py-5 items-start justify-start  bg-white  text-gray-700   dark-mode:text-gray-200 dark-mode:bg-gray-800">
+  <div x-data="{ open: false }" class="flex flex-col lg:flex-r max-w-screen-xl px-4 mx-auto lg:items-center lg:justify-between lg:flex-row lg:px-6 lg:px-8">
+    <div class="py-4 flex flex-row items-center justify-between">
+     
+     <a href="#about"> <img class="h-16 w-auto relative" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/HGNY4J81NHQ9XA937QQ8KAS9Q61I79FC6S75WV10.jpeg" alt="YuenCo logo"> </a>
+    
+      <button class="lg:hidden rounded-lg focus:outline-none focus:shadow-outline" @click="open = !open">
+        <svg fill="currentColor" viewBox="0 0 20 20" class="w-6 h-6">
+          <path x-show="!open" fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z" clip-rule="evenodd"></path>
+          <path x-show="open" fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+        </svg>
+      </button>
+    </div>
+    <nav :class="{'flex': open, 'hidden': !open}" class="flex-col flex-grow pb-4 lg:pb-0 hidden lg:flex lg:justify-end lg:flex-row">
+      <a class="px-4 py-2 mt-2 text-lg  font-bold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 lg:mt-0 lg:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="#about">About Us</a>
+      
+      <a class="px-4 py-2 mt-2 text-lg  font-bold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 lg:mt-0 lg:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="#services">Our Services</a>
+      
+      
+      <a class="px-4 py-2 mt-2 text-lg  font-bold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 lg:mt-0 lg:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 
+      focus:outline-none focus:shadow-outline" href="#our-work">Our Best Work</a>
+      
+    
+      
+      <a class="px-4 py-2 mt-2 text-lg  font-bold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 lg:mt-0 lg:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="#testimonials">Testimonials &amp; Reviews</a>   
+         
+      
+      <a class="px-4 py-2 mt-2 text-lg  font-bold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 lg:mt-0 lg:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="#faqs">Faqs</a>
+      
+      
+      <a class="px-4 py-2 mt-2 text-lg  font-bold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 lg:mt-0 lg:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="#find-us">Find Us</a>
+      
+      
+         <div class = "px-4 py-2 lg:pb-3 mt-2 text-xl font-bold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 lg:mt-0 lg:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"x-data="{open: false}">
+        
+            <a target = "_blank"  x-on:click.prevent="open = true" class="" href="">Send us a Text</a>
+        
+      
+        <div x-show.transition.opacity="open" class="p-4 fixed flex justify-center items-center inset-0 bg-black text-black bg-opacity-75 z-50">
+                <form x-on:click.away="open = false" x-show.transition="open" class="max-w-3xl max-h-full h-auto p-8 py-10 overflow-auto bg-white border-b-2 border-gray-300 rounded-lg shadow-2xl px-7 mt-16 md:mt-0 md:w-2/5">
+                        <h3 class="mb-6 text-2xl font-medium text-black text-center">Send us a Text</h3>
+                        <div class="block mb-4 border border-gray-200 rounded-lg">
+                            <input type="text" name="first-name" id="2-first-name" class="block w-full px-4 py-3 border-2 border-transparent rounded-lg focus:border-blue-500 focus:outline-none" placeholder="First Name">
+                        </div>
+                        <div class="block mb-4 border border-gray-200 rounded-lg">
+                            <input type="text" name="last-name" id="2-last-name" class="block w-full px-4 py-3 border-2 border-transparent rounded-lg focus:border-blue-500 focus:outline-none" placeholder="Last Name">
+                        </div>
+                        <div class="block mb-4 border border-gray-200 rounded-lg">
+                            <input type="text" name="phone-number" id="2-phone-number" class="block w-full px-4 py-3 border-2 border-transparent rounded-lg focus:border-blue-500 focus:outline-none" placeholder="Phone Number">
+                        </div>
+                        <div class="block mb-4 border border-gray-200 rounded-lg">
+                            <textarea name="message" cols="5" id="2-message" class="block w-full px-4 py-3 border-2 border-transparent rounded-lg focus:border-blue-500 focus:outline-none" placeholder="What is your message?"></textarea>
+                        </div>
+                        <div class="block">
+                        <button type="button"  onclick= "send_sms(2, 'YuenCo-Buying')" class="w-full px-3 py-4 font-bold font-lg text-white  bg-gray-900  rounded-lg">Send</button> 
+                        </div>
+                        
+    
+                </form>
+            </div>
+        </div>
+    </nav>
+    </div>
+  </div>
+
+
+
+
+  
+<div class = "flex w-full flex-col">
+
+<section class="flex flex-col w-full  bg-gray-900 text-white  lg:flex-row lg:flex-wrap sm:mx-auto">
+    <div class="flex justify-end p-8 bg-gray-900 lg:py-32 lg:px-16 lg:pl-10 lg:w-1/2">
+        <div class="flex flex-col items-center lg:items-start justify-center w-full lg:max-w-lg">
+            <h5 class="mb-3 text-3xl text-center font-extrabold  leading-none sm:text-4xl lg:text-7xl text-center lg:text-left">
+                YuenCo  
+            </h5>
+            
+            <p class="py-5 mb-5 lg:text-xl text-center lg:text-left">
+                Send us a message for a FREE home buying consultation from the top real estate professionals in the Greater Seattle area!
+            </p>
+            
+            <div class="flex text-center justify-center items-center" x-data="{open: false}">
+                <button type="button" x-on:click.prevent="open = true" class="inline-flex items-center justify-center h-24 px-6 lg:mr-6 tracking-wide transition duration-200 rounded-lg focus:shadow-outline focus:outline-none  bg-gray-200 text-black hover:bg-white hover:text-gray-400 ">
+                    <h5 class="text-3xl font-extrabold">Send us a Text</h5> 
+                </button>
+                <div x-show.transition.opacity="open" class="p-4 fixed flex justify-center items-center inset-0 bg-black bg-opacity-75 z-50">
+                    <form x-on:click.away="open = false" x-show.transition="open" class=" text-black max-w-3xl max-h-full h-auto p-8 py-10 overflow-auto bg-white border-b-2 border-gray-300 rounded-lg shadow-2xl px-7 mt-16 md:mt-0 md:w-2/5">
+                            <h3 class="mb-6 text-2xl font-medium text-black text-center">Send us a Text</h3>
+                        <div class="block mb-4 border border-gray-200 rounded-lg">
+                            <input type="text" name="first-name" id="1-first-name" class="block w-full px-4 py-3 border-2 border-transparent rounded-lg focus:border-blue-500 focus:outline-none" placeholder="First Name">
+                        </div>
+                        <div class="block mb-4 border border-gray-200 rounded-lg">
+                            <input type="text" name="last-name" id="1-last-name" class="block w-full px-4 py-3 border-2 border-transparent rounded-lg focus:border-blue-500 focus:outline-none" placeholder="Last Name">
+                        </div>
+                        <div class="block mb-4 border border-gray-200 rounded-lg">
+                            <input type="text" name="phone-number" id="1-phone-number" class="block w-full px-4 py-3 border-2 border-transparent rounded-lg focus:border-blue-500 focus:outline-none" placeholder="Phone Number">
+                        </div>
+                        <div class="block mb-4 border border-gray-200 rounded-lg">
+                            <textarea name="message" cols="5" id="1-message" class="block w-full px-4 py-3 border-2 border-transparent rounded-lg focus:border-blue-500 focus:outline-none" placeholder="What is your message?"></textarea>
+                        </div>
+                        <div class="block">
+                        <button type="button"  onclick= "send_sms(1, 'YuenCo-Buying')" class="w-full px-3 py-4 font-bold font-lg text-white  bg-gray-900  rounded-lg">Send</button> 
+                        </div>
+                            
+     
+                    </form>
+                </div>
+
+            </div>
+            
+        </div>
+    </div>
+    <div class="relative order-first lg:order-last block lg:w-1/2 ">
+        <img src="" alt="Hero Image" class="object-cover w-full lg:absolute h-80 lg:h-full">
+    </div>
+</section>
+
+
+ 
+    
+
+  
+
+    <section id = "about" class="flex flex-col flex-grow w-full overflow-hidden  lg:flex-row sm:mx-auto  bg-white text-gray-900 ">
+        <div class="relative lg:w-1/2">
+            
+            <img src="https://landing-page-app-hero-images.s3.amazonaws.com/media/francesca-tosolini-XAHSexPxSus-unsplash.jpg" alt="About Us Image" class="object-cover w-full lg:absolute h-80 lg:h-full">
+            
+        </div>
+        <div class="py-5 lg:py-0 flex flex-col lg:py-32 lg:px-16 lg:w-1/2">
+            <div class="flex flex-col items-center lg:items-start w-full lg:max-w-lg">
+                <h5 class="mb-3 text-3xl font-extrabold leading-none sm:text-4xl lg:text-7xl">
+                    About Us
+                </h5>
+                <p class="py-5 px-5 lg:px-0 mb-5 text-center lg:text-left  lg:text-xl">
+                YuenCo is a professional real estate boutique unlike any other. We ensure each client receives personalized service based on honesty and integrity. Kevin Yuen is one of 2020 America&#x27;s top 100 Best Real Estate Professionals and always strives to deliver a 5-star experience.
+                </p>                
+            </div>
+
+            <div class = "flex flex-row flex-wrap text-center w-full lg:max-w-lg">
+            	
+
+
+            
+
+            	
+            	
+            	
+            	
+            
+            
+            </div>
+            
+                <div class = "mt-10 mb-0 flex flex-row justify-center lg:justify-start text-center w-full lg:max-w-lg">
+                    <h5 class="mb-3 text-4xl justify-center lg:justify-start text-center lg:text-left text-gray-900 font-extrabold leading-none tracking-wide text-center">
+                        Connect with us on Social
+                    </h5>
+                </div>
+                <div class = "flex flex-row mb-5 justify-center space-x-3 md:space-x-8 lg:space-x-12 lg:flex-nowrap mt-4   w-full lg:max-w-lg">
+                
+                <a target="_blank" href = "https://www.facebook.com/YuenCompany/photos/?ref=page_internal"> <span class = "text-gray-400"> <i class="fab fa-facebook fa-3x lg:fa-3x "></i> </span> </a> 
+                
+                
+                <a target="_blank"  href = "https://www.instagram.com/yuenco/?hl=en"> <span class = "text-gray-400"> <i class="fab fa-instagram fa-3x lg:fa-3x "></i></i> </span> </a> 
+                
+                
+                
+                
+                
+                
+                 
+                                 
+                           
+                  
+               </div>
+            
+            
+        </div>
+        
+        
+
+
+    </section>
+</div>
+    
+    
+    <section id= "services" class="lg:mt-0 relative w-full px-8 font-sans leading-6  bg-gray-900 border-0 border-gray-200 text-white border-solid ">
+        <div class="flex flex-col items-center max-w-6xl px-8 py-20 mx-auto leading-6 border-solid md:items-stretch md:justify-center md:py-24">
+            
+            <h5 class="mb-3 lg:pr-9 text-3xl mx-auto font-extrabold leading-none sm:text-4xl lg:text-7xl tracking-wide text-center">
+                Our Services
+            </h5>
+            <p class="w-full lg:pr-9 max-w-3xl mx-0 mx-auto mt-4 mb-0 font-sans text-sm font-medium leading-relaxed text-center text-gray-400 border-0 border-gray-200 lg:text-lg md:text-base">
+                What we are best at
+            </p>
+
+            <div class="grid grid-cols-3 gap-5 mt-10 sm:grid-cols-8 lg:grid-cols-12">
+
+                    
+                <div class="max-w-xs col-span-4 font-sans border-0 border-gray-200 ">
+                    <div class="box-border flex flex-col items-center  h-full px-2 py-4 md:py-8 mx-4 leading-6 text-center border-solid ">
+                        
+                        <div class="md:mt-6 font-sans text-center border-0 border-gray-200 ">
+                            <span class="box-border text-xl font-bold leading-none tracking-wider border-solid  text-gray-400  ">Find a Home</span>
+                            <p
+                                class="box-border mx-0 mt-2 mb-0 font-normal leading-snug text-center    border-solid ">
+                                If you&#x27;re looking to purchase a new home, we&#x27;re here to help you step-by-step along the process. We always place our clients first and will help you find your dream home.
+                            </p>
+                        </div>
+                    </div>
+                </div>        
+                    
+                <div class="max-w-xs col-span-4 font-sans border-0 border-gray-200 ">
+                    <div class="box-border flex flex-col items-center  h-full px-2 py-4 md:py-8 mx-4 leading-6 text-center border-solid ">
+                        
+                        <div class="md:mt-6 font-sans text-center border-0 border-gray-200 ">
+                            <span class="box-border text-xl font-bold leading-none tracking-wider border-solid  text-gray-400  ">Concierge Service</span>
+                            <p
+                                class="box-border mx-0 mt-2 mb-0 font-normal leading-snug text-center    border-solid ">
+                                Get fronted for the cost of home improvement services with no interest.
+                            </p>
+                        </div>
+                    </div>
+                </div>        
+                    
+                <div class="max-w-xs col-span-4 font-sans border-0 border-gray-200 ">
+                    <div class="box-border flex flex-col items-center  h-full px-2 py-4 md:py-8 mx-4 leading-6 text-center border-solid ">
+                        
+                        <div class="md:mt-6 font-sans text-center border-0 border-gray-200 ">
+                            <span class="box-border text-xl font-bold leading-none tracking-wider border-solid  text-gray-400  ">Bridge Loan</span>
+                            <p
+                                class="box-border mx-0 mt-2 mb-0 font-normal leading-snug text-center    border-solid ">
+                                A simple solution to bridge the gap between the home you have &amp; the home you want.
+                            </p>
+                        </div>
+                    </div>
+                </div>        
+                    
+                <div class="max-w-xs col-span-4 font-sans border-0 border-gray-200 ">
+                    <div class="box-border flex flex-col items-center  h-full px-2 py-4 md:py-8 mx-4 leading-6 text-center border-solid ">
+                        
+                        <div class="md:mt-6 font-sans text-center border-0 border-gray-200 ">
+                            <span class="box-border text-xl font-bold leading-none tracking-wider border-solid  text-gray-400  ">700+ Vendors</span>
+                            <p
+                                class="box-border mx-0 mt-2 mb-0 font-normal leading-snug text-center    border-solid ">
+                                A network of trusted professionals to provide what you want &amp; need for your property.
+                            </p>
+                        </div>
+                    </div>
+                </div>        
+            
+            </div>
+        </div>
+    </section>
+    
+    
+    <div id="our-work" class="relative mb-0 w-full pt-12 overflow-hidden  bg-white text-gray-900   md:pt-20 xl:pt-20 xl:pb-20">
+        <div class="container relative flex flex-col justify-between h-full max-w-6xl px-10 mx-auto xl:px-0">
+                <h5 class="mb-3 text-3xl font-extrabold leading-none sm:text-4xl lg:text-7xl tracking-wide  text-center">Our Best Work</h5>
+                <p class="my-3 mb-10 text-xl font-medium text-gray-500 text-center">See why our customers love us</p>
+                <div class="flex flex-wrap md:mx-4 md:mb-8 md:flex-row">
+                
+                
+                    <div class="flex sm:h-30 md:h-auto md:w-1/3 px-4 mb-8"><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/DJI_0209_PEJa2eL.jpg" alt="photo of past work" loading="lazy" ></div>
+                    
+                
+                
+                    <div class="flex sm:h-30 md:h-auto md:w-1/3 px-4 mb-8"><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/000_nSE1TYA.jpg" alt="photo of past work" loading="lazy" ></div>
+                    
+                
+                
+                    <div class="flex sm:h-30 md:h-auto md:w-1/3 px-4 mb-8"><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/002_djBDRIg.jpg" alt="photo of past work" loading="lazy" ></div>
+                    
+                
+                
+                    <div class="flex sm:h-30 md:h-auto md:w-1/3 px-4 mb-8"><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/201_tbqYfPP.jpg" alt="photo of past work" loading="lazy" ></div>
+                    
+                
+                
+                    <div class="flex sm:h-30 md:h-auto md:w-1/3 px-4 mb-8"><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/YCO06687.jpg" alt="photo of past work" loading="lazy" ></div>
+                    
+                
+                
+                    <div class="flex sm:h-30 md:h-auto md:w-1/3 px-4 mb-8"><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/DSC00841-Edit-Edit_bwRV0Z5.jpg" alt="photo of past work" loading="lazy" ></div>
+                    
+                 
+                </div>     
+            </div>
+        </div>
+    </div>
+    
+    
+    
+    <div id= "testimonials" class="flex items-center justify-center  bg-gray-900 text-white  py-20 min-w-screen px-4">
+        <div class="px-16 ">
+            <div class="container flex flex-col items-center lg:items-startmx-auto lg:items-center">
+                <div class = "sm:mb-4 md:mb-0">
+                <p class="relative flex  text-center sm:justify-center sm:mb-8 md:justify-start w-full text-lg font-bold tracking-wider uppercase lg:justify-center lg:items-center mb-10">Don&#x27;t just take our word for it</p>
+                </div>
+
+
+                <h5 class="mb-3 text-3xl font-extrabold leading-none sm:text-4xl lg:text-7xl tracking-wide text-center">
+                    
+                    Testimonials &amp; Reviews</h5>
+                <div class="block w-full h-1 max-w-lg mt-6 bg-purple-100 rounded-full"></div>
+                <div class="items-start justify-start w-full mt-12 mb-4 lg:flex lg:flex-wrap">
+
+                    
+            
+                    <div class="flex flex-col items-center lg:items-start justify-center w-full h-auto mb-12 lg:w-1/2">
+                    <div class="flex items-center lg:items-start ">
+                        
+                        <div class="flex flex-col justify-start items-center lg:items-start ">
+                            <h4 class="font-bold  text-gray-200  ">Pamela Hughes</h4>
+                            <p class=" text-gray-200 ">Homeowner</p>
+                            <div class="flex flex-row items-start ">
+                                
+                                
+                                <span class = " text-white "> <i class="fas fa-star"> </i> </span>
+                                
+                                <span class = " text-white "> <i class="fas fa-star"> </i> </span>
+                                
+                                <span class = " text-white "> <i class="fas fa-star"> </i> </span>
+                                
+                                <span class = " text-white "> <i class="fas fa-star"> </i> </span>
+                                
+                                <span class = " text-white "> <i class="fas fa-star"> </i> </span>
+                                
+                                
+                            </div>
+                            <blockquote class="mt-8 lg:pr-5 font-bold text-xl text-center lg:text-left   text-white ">"Kevin is humble, hardworking and knowledgeable.  He shows up, he understands his value add and is confident, but not arrogant.  He is methodical in his approach and knows how to listen and adapt to circumstances.  There are few who match Kevin&#x27;s traits and approach.  Happy to have the opportunity to work with him!"</blockquote>                           
+                        </div>
+                    </div>
+                    
+                    </div>
+
+                    
+            
+                    <div class="flex flex-col items-center lg:items-start justify-center w-full h-auto mb-12 lg:w-1/2">
+                    <div class="flex items-center lg:items-start ">
+                        
+                        <div class="flex flex-col justify-start items-center lg:items-start ">
+                            <h4 class="font-bold  text-gray-200  ">Richard Lin</h4>
+                            <p class=" text-gray-200 ">Condo Buyer &amp; Seller</p>
+                            <div class="flex flex-row items-start ">
+                                
+                                
+                                <span class = " text-white "> <i class="fas fa-star"> </i> </span>
+                                
+                                <span class = " text-white "> <i class="fas fa-star"> </i> </span>
+                                
+                                <span class = " text-white "> <i class="fas fa-star"> </i> </span>
+                                
+                                <span class = " text-white "> <i class="fas fa-star"> </i> </span>
+                                
+                                <span class = " text-white "> <i class="fas fa-star"> </i> </span>
+                                
+                                
+                            </div>
+                            <blockquote class="mt-8 lg:pr-5 font-bold text-xl text-center lg:text-left   text-white ">"Kevin is an utmost professional who looked out for my interest and was always willing to present the pros/cons of each property rather than push for a sale. A trustworthy broker and invaluable guide along the process with the right connections. I highly recommend."</blockquote>                           
+                        </div>
+                    </div>
+                    
+                    </div>
+
+                    
+            
+                    <div class="flex flex-col items-center lg:items-start justify-center w-full h-auto mb-12 lg:w-1/2">
+                    <div class="flex items-center lg:items-start ">
+                        
+                        <div class="flex flex-col justify-start items-center lg:items-start ">
+                            <h4 class="font-bold  text-gray-200  ">Srivastva Puneet</h4>
+                            <p class=" text-gray-200 ">Homebuyer</p>
+                            <div class="flex flex-row items-start ">
+                                
+                                
+                                <span class = " text-white "> <i class="fas fa-star"> </i> </span>
+                                
+                                <span class = " text-white "> <i class="fas fa-star"> </i> </span>
+                                
+                                <span class = " text-white "> <i class="fas fa-star"> </i> </span>
+                                
+                                <span class = " text-white "> <i class="fas fa-star"> </i> </span>
+                                
+                                <span class = " text-white "> <i class="fas fa-star"> </i> </span>
+                                
+                                
+                            </div>
+                            <blockquote class="mt-8 lg:pr-5 font-bold text-xl text-center lg:text-left   text-white ">"Working with Kevin has been an excellent experience for both my wife and I. He so through in his approach and his responses to our queries are very prompt. He is very knowledgeable and always gives a detailed insight about the house, both good and bad and never tries to pressurize us to buy a house. He gave all the details/data about the house and let us made the decision based off it. Even after closing out house, he still checks on us from time to time and help us connect to right people for anything we need to get done in the house. The people he recommends are good to work as well and always charge reasonable fees.
+
+We would definitely recommend him for anyone looking to buy a property."</blockquote>                           
+                        </div>
+                    </div>
+                    
+                    </div>
+
+                    
+            
+                    <div class="flex flex-col items-center lg:items-start justify-center w-full h-auto mb-12 lg:w-1/2">
+                    <div class="flex items-center lg:items-start ">
+                        
+                        <div class="flex flex-col justify-start items-center lg:items-start ">
+                            <h4 class="font-bold  text-gray-200  ">Sierra Simmons</h4>
+                            <p class=" text-gray-200 ">Condo Buyer</p>
+                            <div class="flex flex-row items-start ">
+                                
+                                
+                                <span class = " text-white "> <i class="fas fa-star"> </i> </span>
+                                
+                                <span class = " text-white "> <i class="fas fa-star"> </i> </span>
+                                
+                                <span class = " text-white "> <i class="fas fa-star"> </i> </span>
+                                
+                                <span class = " text-white "> <i class="fas fa-star"> </i> </span>
+                                
+                                <span class = " text-white "> <i class="fas fa-star"> </i> </span>
+                                
+                                
+                            </div>
+                            <blockquote class="mt-8 lg:pr-5 font-bold text-xl text-center lg:text-left   text-white ">"Wish I could give Skylar more than 5 stars! 
+
+This was my first homebuying experience, and I am beyond grateful to have had Skylar, Kevin, &amp; team on my side throughout the process. (I also used one of the mortgage lenders recommended by the team, even after comparing to other lenders, and they were wonderful as well). All were very responsive to emails, texts, and calls, and were able to quickly schedule viewings for any properties I was interested in. 
+
+The experience was as relaxed as I presume the homebuying process can be - it felt like I was searching for my first home with a good friend who happens to be extremely knowledgeable in the real estate industry. After each property viewing, Skylar would reach out to the seller with any questions I had, and typically had answers for me within MINUTES. I also appreciate that Skylar was candid and voiced any potential concerns while considering properties . It&#x27;s clear that they had my best interests in mind at all times, and truly wanted to help me find a home I would love for years to come. 
+
+Going on two months in my new home and I couldn&#x27;t be happier. Thank you Skylar!!"</blockquote>                           
+                        </div>
+                    </div>
+                    
+                    </div>
+
+                    
+            
+                    <div class="flex flex-col items-center lg:items-start justify-center w-full h-auto mb-12 lg:w-1/2">
+                    <div class="flex items-center lg:items-start ">
+                        
+                        <div class="flex flex-col justify-start items-center lg:items-start ">
+                            <h4 class="font-bold  text-gray-200  ">Daniel Shaw</h4>
+                            <p class=" text-gray-200 ">Homebuyer</p>
+                            <div class="flex flex-row items-start ">
+                                
+                                
+                                <span class = " text-white "> <i class="fas fa-star"> </i> </span>
+                                
+                                <span class = " text-white "> <i class="fas fa-star"> </i> </span>
+                                
+                                <span class = " text-white "> <i class="fas fa-star"> </i> </span>
+                                
+                                <span class = " text-white "> <i class="fas fa-star"> </i> </span>
+                                
+                                <span class = " text-white "> <i class="fas fa-star"> </i> </span>
+                                
+                                
+                            </div>
+                            <blockquote class="mt-8 lg:pr-5 font-bold text-xl text-center lg:text-left   text-white ">"We recently purchased a home with the help of Kevin and his team, and it became one of the greatest purchase experiences we’ve ever had (not just in real estate)!  
+
+From our first introduction meeting, it was clear that the Yuen Group’s service would be top notch.  Kevin walked us through every step of the home buying process, prepared us for the crazy Seattle market, and pinpointed what types of areas/homes we were interested in.  We were amazed by the level of expertise, attentiveness, and care that Kevin took with every home he showed us...I should also mention that Kevin’s response time to texts is otherworldly, day or night he almost always responds within minutes.   
+
+Even after we purchased our home, Kevin and Jasmine continue to help us with any questions about our new home and supply us with trusted contractors.  We have already worked with 4 of their recommended vendors and each one has not only been totally reliable, but also reasonably priced!
+
+If you’re looking for a real estate agent in the area, look no further.  Kevin will save you time, money, and all the regrets you may have if you go with any other agent.  Hopefully one day we can work with our friends at the Yuen Group again if we ever decide to buy or sell another house!"</blockquote>                           
+                        </div>
+                    </div>
+                    
+                    </div>
+
+                    
+            
+                    <div class="flex flex-col items-center lg:items-start justify-center w-full h-auto mb-12 lg:w-1/2">
+                    <div class="flex items-center lg:items-start ">
+                        
+                        <div class="flex flex-col justify-start items-center lg:items-start ">
+                            <h4 class="font-bold  text-gray-200  ">Sihan Tu</h4>
+                            <p class=" text-gray-200 ">Homebuyer</p>
+                            <div class="flex flex-row items-start ">
+                                
+                                
+                                <span class = " text-white "> <i class="fas fa-star"> </i> </span>
+                                
+                                <span class = " text-white "> <i class="fas fa-star"> </i> </span>
+                                
+                                <span class = " text-white "> <i class="fas fa-star"> </i> </span>
+                                
+                                <span class = " text-white "> <i class="fas fa-star"> </i> </span>
+                                
+                                <span class = " text-white "> <i class="fas fa-star"> </i> </span>
+                                
+                                
+                            </div>
+                            <blockquote class="mt-8 lg:pr-5 font-bold text-xl text-center lg:text-left   text-white ">"Kevin is super knowledgable and is always in the interest of the clients. When we visit a house, he always talks about both positive and negative aspects in very detail. Before we make a decision on a house, he also asks us multiple times if it&#x27;s the ideal house for us. As the market is hot and the bidding war is crazy, his kind words keep us calm down and help us make a wise decision. We not only found our best home but definitely learned a lot of knowledge about housing when working with him. Highly recommend to appoint Kevin as your agent."</blockquote>                           
+                        </div>
+                    </div>
+                    
+                    </div>
+
+                    
+            
+                    <div class="flex flex-col items-center lg:items-start justify-center w-full h-auto mb-12 lg:w-1/2">
+                    <div class="flex items-center lg:items-start ">
+                        
+                        <div class="flex flex-col justify-start items-center lg:items-start ">
+                            <h4 class="font-bold  text-gray-200  ">Melody Lee</h4>
+                            <p class=" text-gray-200 ">Condo Buyer</p>
+                            <div class="flex flex-row items-start ">
+                                
+                                
+                                <span class = " text-white "> <i class="fas fa-star"> </i> </span>
+                                
+                                <span class = " text-white "> <i class="fas fa-star"> </i> </span>
+                                
+                                <span class = " text-white "> <i class="fas fa-star"> </i> </span>
+                                
+                                <span class = " text-white "> <i class="fas fa-star"> </i> </span>
+                                
+                                <span class = " text-white "> <i class="fas fa-star"> </i> </span>
+                                
+                                
+                            </div>
+                            <blockquote class="mt-8 lg:pr-5 font-bold text-xl text-center lg:text-left   text-white ">"Kevin is THE master of real estate! He helped me find a home that met my needs and wants, and walked me through everything patiently as a first-time homebuyer. He was extremely honest about both pros and cons of places we toured, and never once did he push me or pressure me to make decisions. We found a place that I fell in love with, and he helped me move quickly to make an offer. He negotiated to help me save 17k off of a brand new condo, which I was not expecting at all!!! His team has even supported me through things like furniture recommendations and getting blinds setup. This whole process has felt so seamless, and I cannot thank Kevin enough!! I would recommend Kevin a thousand times to anyone."</blockquote>                           
+                        </div>
+                    </div>
+                    
+                    </div>
+
+                    
+            
+                    <div class="flex flex-col items-center lg:items-start justify-center w-full h-auto mb-12 lg:w-1/2">
+                    <div class="flex items-center lg:items-start ">
+                        
+                        <div class="flex flex-col justify-start items-center lg:items-start ">
+                            <h4 class="font-bold  text-gray-200  ">Manhei Chiu</h4>
+                            <p class=" text-gray-200 ">Townhouse Buyer</p>
+                            <div class="flex flex-row items-start ">
+                                
+                                
+                                <span class = " text-white "> <i class="fas fa-star"> </i> </span>
+                                
+                                <span class = " text-white "> <i class="fas fa-star"> </i> </span>
+                                
+                                <span class = " text-white "> <i class="fas fa-star"> </i> </span>
+                                
+                                <span class = " text-white "> <i class="fas fa-star"> </i> </span>
+                                
+                                <span class = " text-white "> <i class="fas fa-star"> </i> </span>
+                                
+                                
+                            </div>
+                            <blockquote class="mt-8 lg:pr-5 font-bold text-xl text-center lg:text-left   text-white ">"5-star no doubt. As first-time home buyers, we knew nothing and Kevin was  our most knowledgeable source to getting this new home. He is professional and responsive, and he would stand in your situation to provide what&#x27;s best for you. He can also provide great sources to other needs throughout the process (financing, inspectors, etc...) without giving you pressure. 
+
+Purchasing a home is definitely an experience, and finding the right agent is an important first step, we highly recommend Kevin if you are thinking about buying a home :)"</blockquote>                           
+                        </div>
+                    </div>
+                    
+                    </div>
+
+                    
+                </div>               
+
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+<section id= "faqs" class="py-16   bg-white text-gray-900  md:py-20 lg:py-24">
+    <div class="max-w-5xl px-12 mx-auto xl:px-0">
+
+        <h2 class="text-3xl  font-bold md:text-4xl lg:text-6xl xl:text-7xl text-center lg:text-left">FAQs</h2>
+        <p class="mt-4 text-xl font-thin  lg:text-2xl text-center lg:text-left">Your questions answered</p>
+
+        <div class="relative mt-12 space-y-3">
+
+        
+
+            <!-- Question 1 -->
+            <div x-data="{ show: false }" class="relative overflow-hidden border-b border-gray-100 select-none">
+                <h4 @click="show=!show" class=" text-center flex items-center justify-between px-2 text-xl font-medium text-gray-400 cursor-pointer sm:text-xl md:text-2xl py-7 hover:text-gray-900  lg:text-left">
+                    <span class = "flex text-left lg:text-center">What&#x27;s the best way to contact us?</span>
+                    <svg class="w-6 h-6 mr-2 transition-all duration-200 ease-out transform rotate-0" :class="{ '-rotate-180' : show }" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                </h4>
+                <p class="px-2 pt-0 -mt-2 text-gray-900 sm:text-lg py-7 text-center lg:text-left"
+                    x-transition:enter="transition-all ease-out duration-300"
+                    x-transition:enter-start="opacity-0 transform -translate-y-4"
+                    x-transition:enter-end="opacity-100 transform -translate-y-0"
+                    x-transition:leave="transition-all ease-in duration-300"
+                    x-transition:leave-start="opacity-100 transform -translate-y-0"
+                    x-transition:leave-end="opacity-0 transform -translate-y-4"
+                    x-show="show"
+                    x-cloak>Give us a call or send us a text at 425-628-8012. You can also email Kevin at kevin@yuencompany.com.</p>
+            </div>
+
+        
+
+        </div>
+    </div>
+</section>
+
+
+
+
+<section id="find-us" class="py-16   bg-white text-gray-900  md:py-20 lg:py-20">
+    <div class="max-w-5xl px-12 mx-auto text-center xl:px-0">
+
+    <h5 class="mb-5 text-3xl  mx-auto text-center font-extrabold leading-none sm:text-4xl lg:text-7xl"> Find Us</h5>
+    <iframe
+            width="100%"
+            height="500px"
+            frameborder="0" style="border:0"
+            src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBPscVsAYq9Mo6GmcMKF1tUfrWWN2Gt93M
+                &q=,Bellevue,WA," allowfullscreen>
+        </iframe>
+    </div>
+</section>
+
+
+
+<section class="py-10 bg-gray-900">
+    
+        <div class="flex flex-col justify-around text-center md:flex-row">
+            <p class="order-last text-sm leading-tight text-gray-500 md:order-first"> Crafted with <a  href="https://www.prophone.com/prosite" class="  text-white ">ProPhone</a>. Built with ❤️ by our team. </p>
+             
+            <ul class="flex flex-row flex-wrap text-center justify-center pb-3 lg:-ml-4 lg:-mr-4 text-sm">
+                <li> <a href="#about" class="px-2 md:px-4 text-gray-500 hover:text-white">About Us</a> </li>
+                
+                <li> <a href="#services" class="px-2 md:px-4 text-gray-500 hover:text-white">Our Services</a> </li>
+                
+                
+                <li> <a href="#our-work" class=" px-2 md:px-4 text-gray-500 hover:text-white">Our Best Work</a> </li>
+                
+                
+                <li> <a href="#testimonials" class="px-2 md:px-4 text-gray-500 hover:text-white">Testimonials &amp; Reviews</a></li>
+                
+                
+                <li> <a href="#faqs" class="px-2 md:px-4 text-gray-500 hover:text-white">Faqs</a></li>
+                
+                
+                
+                <li> <a href="#find-us" class=" px-2 md:px-4 text-gray-500 hover:text-white">Find Us</a></li>
+                
+            </ul>
+        </div>
+    </div>
+</section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/2.8.0/alpine.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
